@@ -24,16 +24,16 @@ img {
   height: auto;
 }
 
-  .container {
+  .container1 {
     position: relative;
   }
 
-  .fade {
+  .fade1 {
   position: relative;
   width: 100%;
 }
 
-.overlay {
+.overlay1 {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -46,11 +46,11 @@ img {
   background-color: #8BD9B2;
 }
 
-.fade:hover .overlay {
+.fade1:hover .overlay1 {
   opacity: 1;
 }
 
-.text {
+.text1 {
   color: #fff;
   font-size: 50px;
   position: absolute;
