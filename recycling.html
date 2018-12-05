@@ -2,21 +2,13 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="css/styles.css">
-  <script src="js/recycling.js"></script>
+<script src="js/recycling.js"></script>
 </head>
 <body>
   <h1>Where can I recycle in Glasgow?</h1>
 <div id="map"></div>
-<script>
-function initMap() {
-  var recycling = {lat: 55.837914, lng: -4.246540};
-  var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 12, center: recycling});
-  var marker = new google.maps.Marker({position: recycling, map: map});
-}
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBa-x9TainBhx5VH8ivtp1UVodtRSsyKe8&callback=initMap">
-    </script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBa-x9TainBhx5VH8ivtp1UVodtRSsyKe8&callback=initMap">
+</script>
 </body>
 </html>
