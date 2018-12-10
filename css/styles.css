@@ -13,16 +13,30 @@ h1 {
   justify-content: space-around;
   }
 
-img {
+#bottles {
   height: 320px;
   width: 320px;
+  border-radius: 30px;
+  max-width: 100%;
+  height: auto;
   }
 
-  .image {
-  display: block;
-  width: 100%;
-  height: auto;
+  #shopping {
+    height: 320px;
+    width: 320px;
+    border-radius: 30px;
+    max-width: 100%;
+    height: auto;
 }
+
+    #children {
+      height: 320px;
+      width: 320px;
+      border-radius: 30px;
+      max-width: 100%;
+      height: auto;
+      }
+
 
   .container1 {
     position: relative;
@@ -44,10 +58,11 @@ img {
   opacity: 0;
   transition: .5s ease;
   background-color: #8BD9B2;
+  border-radius: 30px;
 }
 
 .fade1:hover .overlay1 {
-  opacity: 1;
+  opacity: 0.7;
 }
 
 .text1 {
@@ -66,4 +81,20 @@ img {
   width: 80%;
   height: 400px;
   margin: 0 auto;
+}
+
+#logo {
+  display: block;
+  width: 20%;
+  height: 20%;
+  padding: 5px 0 5px 0;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #8BD9B2;
+  opacity: 0.7;
+  margin: 5px 0 5px 0;
 }
