@@ -1,5 +1,3 @@
-
-
 function initMap() {
 
 	var broadway = {

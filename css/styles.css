@@ -3,50 +3,33 @@ body {
 }
 
 h1 {
+  font-family: 'Raleway', sans-serif;
   text-align: center;
   font-size: 50px;
 }
 
 h2 {
+  font-family: 'Raleway', sans-serif;
   text-align: center;
+}
+
+header {
+  background-color: #8BD9B2;
+  opacity: 0.7;
+  margin: 5px 0 5px 0;
 }
 
 .flex-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  }
-
-#bottles {
-  height: 320px;
-  width: 320px;
-  border-radius: 30px;
-  max-width: 100%;
-  height: auto;
-  }
-
-  #shopping {
-    height: 320px;
-    width: 320px;
-    border-radius: 30px;
-    max-width: 100%;
-    height: auto;
 }
 
-    #children {
-      height: 320px;
-      width: 320px;
-      border-radius: 30px;
-      max-width: 100%;
-      height: auto;
-      }
-
-
-  .container1 {
+.container1 {
     position: relative;
-  }
+}
 
-  .fade1 {
+.fade1 {
   position: relative;
   width: 100%;
 }
@@ -79,6 +62,31 @@ h2 {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+#bottles {
+  height: 320px;
+  width: 320px;
+  border-radius: 30px;
+  max-width: 100%;
+  height: auto;
+}
+
+  #shopping {
+    height: 320px;
+    width: 320px;
+    border-radius: 30px;
+    max-width: 100%;
+    height: auto;
+}
+
+    #children {
+      height: 320px;
+      width: 320px;
+      border-radius: 30px;
+      max-width: 100%;
+      height: auto;
 }
 
 #map {
@@ -95,10 +103,4 @@ h2 {
   max-width: 100%;
   height: auto;
   margin: 0 auto;
-}
-
-header {
-  background-color: #8BD9B2;
-  opacity: 0.7;
-  margin: 5px 0 5px 0;
 }
