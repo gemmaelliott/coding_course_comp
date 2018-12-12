@@ -1,0 +1,566 @@
+/* -----Web Page Layout----- */
+/* Body styling */
+/*Nav Bar*/
+/* The side navigation menu */
+
+
+ul#sidebar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #f3f3f3;
+}
+
+li#topbar {
+  float: left;
+}
+
+.topbar li a {
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+li a.active1 {
+  color: white;
+  background-color: #4CAF50;
+}
+
+/* END OF TOP BAR */
+
+header {
+  display: block;
+}
+
+body {
+  background: linear-gradient(to top, #ffff 0%, #8bd9b2 75%, #8bd9b2 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Titillium Web', sans-serif;
+  color: #4f6057;
+}
+
+
+.column1 {
+  float: left;
+  width: 3%;
+  padding: 5px;
+}
+
+.column2 {
+  float: left;
+  width: 90%;
+  padding: 5px;
+}
+
+.column3 {
+  float: left;
+  width: 7%;
+  padding: 5px;
+}
+
+br {
+  display: block;
+  content: "";
+  margin-top: 4%;
+}
+
+hr.section {
+  border-top: 1px solid #ffff;
+}
+
+hr.segment {
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, #a6dbc0, #ffff, #a6dbc0);
+  background-image: -moz-linear-gradient(left, #a6dbc0, #ffff, #a6dbc0);
+  background-image: -ms-linear-gradient(left, #a6dbc0, #ffff, #a6dbc0);
+  background-image: -o-linear-gradient(left, #a6dbc0, #ffff, #a6dbc0);
+}
+
+
+/* Content Image/symbol containers */
+.column {
+  float: left;
+  width: 18%;
+  padding: 5px;
+}
+
+#christmas_text {
+  font-size: 17px;
+}
+
+#charity_super {
+  font-size: 8px;
+}
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* -----End Webpage Layout----- */
+
+/* -----Image Symbol Contents Row----- */
+img {
+  border-radius: 50%;
+}
+
+/* -----Start of Overlay----- */
+.container {
+  position: relative;
+  width: 50%;
+  left: 30px;
+
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  transition: .6s ease;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 50%; /*Border-radius is what made the square overlays become circles*/
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay .s_text A {
+  color: #036003;
+}
+
+.s_text {
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+/* -----End of Overlay----- */
+
+/* ----Start of responsive stacked design for symbol contents---*/
+@media screen and (max-width: 700px) {
+  .container {
+
+  }
+}
+/*-Responsive overlay text-*/
+@media screen and (max-width: 700px) {
+  .s_text {
+    font-size: 15px;
+  }
+  #christmas_text {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .s_text {
+    font-size: 10px;
+  }
+  #christmas_text {
+    font-size: 7px;
+  }
+}
+/* ---End of responsive design for symbol contents---*/
+/* -----END of Image Symbol Contents Row----- */
+
+
+/* ----- START of charity Grid -----*/
+/* The grid: Three equal columns that floats next to each other */
+.column_g {
+  float: left;
+  width: 28%;
+  padding: 35px 24px 35px 24px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+}
+
+.column_g#cg1 {
+  background-color: #a1e2c2;
+}
+
+.column_g#cg2 {
+  background-color: #00db6d;
+}
+
+.column_g#cg3 {
+  background-color: #07703c;
+}
+
+.international p {
+  color: white
+}
+
+.international h4 {
+  color: white
+}
+
+.containerTab {
+  padding: 20px;
+  color: white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Closable button inside the container tab */
+.closebtn {
+  float: right;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+/* Responsive Stacks */
+/* On screens that are less than 400px, display the 3rd bar underneath */
+@media screen and (max-width: 700px) {
+  .column_g#cg3 {
+    font-size: 20px;
+    text-align: center;
+    width: 65%;
+  }
+  .containerTab {
+    text-align: center;
+    float: none;
+  }
+}
+/* -----END of Charity Grid----- */
+
+
+#bullet_lg {
+  vertical-align: sub;
+  padding: 0px 10px 0px 5px;
+}
+
+#bullet_sml {
+  vertical-align: sub;
+  padding: 0px 5px 0px 5px;
+}
+
+#tree_list {
+  display: inline-block;
+  margin: middle;
+  text-align: justify;
+}
+
+/* Font/Text styling */
+h0 {
+  font-size: 35px;
+}
+
+h1 {
+  align: center;
+  position: relative;
+  float: left;
+  padding: 35px 16px;*/
+  font-size: 95;
+}
+
+h2 {
+  display: inline;
+  font-size: 25px;
+  color: #4f6057;
+}
+
+h3 {
+  display: inline;
+  color: #4f6057;
+  font-size: 20px;
+}
+
+h4 {
+  display: inline;
+  font-size: 18px;
+  text-decoration: underline;
+  color: #4f6057;
+}
+
+p {
+  color: #4f6057;
+}
+
+ul {
+  color: #4f6057;
+}
+
+li {
+  margin: 2px 0px 0px 0px;
+}
+
+a {
+  color: #021c0e;
+}
+
+sup {
+  font-size: 9px;
+}
+
+#important {
+  text-decoration: underline;
+}
+
+#centralised {
+  text-align: center;
+}
+
+#references {
+  color: #496b41;
+}
+
+#strong {
+  color: #4f6057
+}
+
+#color_error {
+  color: #4f6057;
+}
+/* End Font/Text styling */
+
+/* --- START Edit Images / Video--- */
+#logo_head {
+  display: inline-block;
+  border-radius: 0%;
+  float: left;
+  width:15%;
+}
+
+/*#row_logo_bar {
+  display: inline-block;
+}*/
+
+#xmas_bottle {
+  display: block;
+  display: inline;
+  float: right;
+  padding: 0px 0px 0px 50px;
+  margin-right: auto;
+  border-radius: 0%;
+  width: 40%;
+}
+
+#xmas_treelogo {
+  display: block;
+  float: right;
+  border-radius: 0%;
+  width: 15%;
+  display: inline;
+  padding-right: 50px;
+}
+
+.video {
+  display: block;
+  text-align: center;
+}
+
+#home {
+  display: block;
+  float: right;
+  border-radius: 0%;
+  width: 35%;
+  padding: 0px 0px 0px 30px;
+}
+
+#garden_collage {
+  display: block;
+  float: right;
+  border-radius: 0%;
+  width: 15%;
+  display: inline;
+
+  max-height: 25%;
+  padding: 0px 50px 0px 50px;
+}
+
+#closet {
+  display: block;
+  float: left;
+  padding: 0px 30px 0px 0px;
+}
+
+#work_cycle {
+  display: block;
+  float: left;
+  border-radius: 0%;
+  padding-right: 50px;
+}
+
+#work_strip {
+  display: block;
+  float: left;
+  border-radius: 0%;
+  padding-left: 30px;
+  width: 80%;
+}
+
+#school_globe {
+  display: block;
+  float: left;
+  border-radius: 0%;
+  padding-right: 30px;
+  width: 30%;
+}
+
+/* ---END edit images--- */
+
+/* ------ start POPUP Contact Us Box ----- */
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #00db6d;
+  color: white;
+  font-size: 15px;
+  font-family: 'Titillium Web', sans-serif;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 180px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 15px;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+/* ------ end POPUP Contact Us Box ----- */
+
+
+/* -------- FOOTER + REFERENCES + LOGO --------*/
+#logo_foot {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0%;
+  width: 15%;
+
+}
+
+/* ---- References Button ---- */
+.collapsible {
+  background-color: #00db6d;
+  color: white;
+  cursor: pointer;
+  padding: 18px 18px 18px 50px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: 3px;
+  outline-color: white;
+  outline-style: ridge;
+  font-size: 25px;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #8ef9c3;
+}
+
+.collapsible:after {
+  content: '\002B'; /* Unicode character for "plus" sign (+) */
+  font-size: 25px;
+  color: white;
+  float: right;
+}
+
+.active:after {
+  content: "\2212"; /* Unicode character for "minus" sign (-) */
+  font-size: 25px;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  overflow: hidden;
+  display: none;
+  padding: 0 18px;
+  background-color: #f2f9ef;
+}
