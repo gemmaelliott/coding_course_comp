@@ -3,26 +3,25 @@ body {
 }
 
 h1 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Titilium Web', sans-serif;
   text-align: center;
   font-size: 50px;
 }
 
 h2 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Titilium Web', sans-serif;
   text-align: center;
 }
 
 h3 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Titilium Web', sans-serif;
   text-align: center;
 }
 
 p {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Titilium Web', sans-serif;
   text-align: center;
 }
-
 
 
 header {
@@ -74,7 +73,7 @@ header {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Titilium Web', sans-serif;
 }
 
 div.rainbow p {
@@ -183,7 +182,7 @@ li a.active {
   display: block;
   color: #f2f2f2;
   text-align: center;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Titilium Web', sans-serif;
   padding: 14px;
   text-decoration: none;
 }
@@ -210,7 +209,6 @@ li a.active {
 }
 
 
-
 .fa-facebook {
   background: #3B5998;
   color: white;
@@ -224,10 +222,9 @@ li a.active {
 
 <<<<<<< Updated upstream
 #logo {
-  display: block;
-  width: 20%;
-  height: 20%;
-  padding: 5px 0 5px 0;
-  max-width: 100%;
-  height: auto;
-  margin: 0 auto;
+  /*display: block;*/
+  width: 10%;
+  height: 10%;
+  padding: 5px 0 5px 5px;
+  /*max-width: 100%;
+  margin: 0 auto;*/
