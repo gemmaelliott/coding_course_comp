@@ -13,6 +13,16 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
 header {
   background-color: #8BD9B2;
   opacity: 0.7;
@@ -65,6 +75,40 @@ header {
   font-family: 'Raleway', sans-serif;
 }
 
+div.rainbow p {
+  width: 300px
+margin: 4px auto;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 600px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+div.logos2{
+  padding: 15px;
+  text-align: center;
+
+  column-count: 3;
+
+}
+
 #bottles {
   height: 320px;
   width: 320px;
@@ -95,6 +139,38 @@ header {
   margin: 0 auto;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #f3f3f3;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+li a.active {
+  color: white;
+  background-color: #4CAF50;
+}
+
+
+<<<<<<< Updated upstream
 #logo {
   display: block;
   width: 20%;
@@ -103,4 +179,3 @@ header {
   max-width: 100%;
   height: auto;
   margin: 0 auto;
-}
